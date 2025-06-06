@@ -1,0 +1,4 @@
+node_modules
+*.zip
+.turbo
+.DS_Store

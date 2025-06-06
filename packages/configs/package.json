@@ -1,0 +1,7 @@
+{
+    "name": "@owowagency/configs",
+    "type": "module",
+    "exports": {
+        "./tsconfig": "./tsconfig.json"
+    }
+}

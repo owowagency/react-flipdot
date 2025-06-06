@@ -1,0 +1,7 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist",
+        "declarationDir": "./dist",
+    },
+    "extends": "@owowagency/configs/tsconfig"
+}

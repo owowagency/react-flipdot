@@ -1,0 +1,32 @@
+{
+  "name": "@owowagency/flipdot-ui",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "clean": "rm -rf ./dist",
+    "build": "esbuild src/index.ts --bundle --platform=node --packages=external --outfile=dist/index.js --format=esm",
+    "build:watch": "esbuild src/index.ts --bundle --platform=node --packages=external --outfile=dist/index.js --format=esm --watch",
+    "build:types": "tsc",
+    "build:types:watch": "tsc --watch"
+  },
+  "devDependencies": {
+    "@owowagency/configs": "workspace:*",
+    "@types/react": "^19.1.4",
+    "esbuild": "^0.25.5",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@owowagency/flipdot-canvas": "workspace:*",
+    "@owowagency/flipdot-dom": "workspace:*",
+    "@owowagency/react-flipdot": "workspace:*",
+    "react": "^19.1.0"
+  }
+}

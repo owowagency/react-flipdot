@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "skipLibCheck": true,
+        "module": "ESNext",
+        "moduleResolution": "bundler",
+        "target": "ESNext",
+        "isolatedModules": true,
+        "esModuleInterop": true,
+        "noEmit": true,
+        "allowImportingTsExtensions": true,
+        "jsx": "react-jsx",
+        "outDir": "dist",
+    }
+}

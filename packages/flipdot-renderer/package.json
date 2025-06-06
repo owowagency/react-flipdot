@@ -1,0 +1,29 @@
+{
+  "name": "@owowagency/flipdot-renderer",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "clean": "rm -rf ./dist",
+    "build": "esbuild src/index.ts --bundle --platform=node --packages=external --outfile=dist/index.js --format=esm",
+    "build:watch": "esbuild src/index.ts --bundle --platform=node --packages=external --outfile=dist/index.js --format=esm --watch",
+    "build:types": "tsc",
+    "build:types:watch": "tsc --watch"
+  },
+  "devDependencies": {
+    "@owowagency/configs": "workspace:*",
+    "@types/node": "^22.15.21",
+    "esbuild": "^0.25.5",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "canvas": "^3.1.0",
+    "@owowagency/flipdot-emu": "workspace:*"
+  }
+}

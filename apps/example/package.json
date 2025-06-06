@@ -1,0 +1,25 @@
+{
+  "name": "@owowagency/example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf ./dist",
+    "build": "esbuild src/index.tsx --bundle --platform=node --packages=external --outfile=dist/index.js --format=esm",
+    "build:watch": "esbuild src/index.tsx --bundle --platform=node --packages=external --outfile=dist/index.js --format=esm --watch",
+    "start": "node dist/index.js"
+  },
+  "devDependencies": {
+    "@owowagency/configs": "workspace:*",
+    "@types/react": "^19.1.4",
+    "esbuild": "^0.25.5",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@owowagency/flipdot-ui": "workspace:*",
+    "@owowagency/react-flipdot": "workspace:*",
+    "react": "^19.1.0",
+    "react-error-boundary": "^6.0.0"
+  }
+}
